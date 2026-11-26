@@ -1,0 +1,5 @@
+```
+$ BARREL_CREDENTIAL=brl_app_very_secret_value barrel --output json release create --artifact fixture.bin --platform tauri --arch arm64 --format dmg --version 1.0.0 --url https://example.test/x.dmg --project-id proj_1 --channel stable --dry-run
+{"projectId":"proj_1","dryRun":true,"payload":{"channelId":"stable","version":"1.0.0","releaseNotes":"","artifacts":[{"filename":"fixture.bin","platform":"tauri","architecture":"arm64","format":"dmg","sizeBytes":0,"url":"https://example.test/x.dmg","integrity":{"kind":"checksum","algorithm":"sha512","value":"z4PhNX7vuL3xVChQ1m2AB9Yg5AULVxXcg/SpIdNs6c5H0NE8XYXysP+DGNKHfuwvY7kxvUdBeoGlODJ6+SfaPg=="}}]}}
+
+```
