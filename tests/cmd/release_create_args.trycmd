@@ -1,0 +1,5 @@
+```
+$ barrel release create --artifact x.zip --platform electron --arch x64 --format zip --version 1.0.0 --url https://cdn.example.test/x.zip --release-notes hi --release-notes-file notes.txt
+? failed
+...
+```
