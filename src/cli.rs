@@ -5,7 +5,7 @@ use std::path::PathBuf;
 #[command(
     name = "barrel",
     version,
-    about = "Register a release with Barrel for an artifact you've already built, signed, and hosted."
+    about = "Register and track desktop app releases with Barrel."
 )]
 pub struct Cli {
     #[command(subcommand)]
