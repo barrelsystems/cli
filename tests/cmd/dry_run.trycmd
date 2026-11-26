@@ -1,0 +1,6 @@
+```
+$ BARREL_CREDENTIAL=brl_app_very_secret_value barrel release create --artifact fixture.bin --platform tauri --arch arm64 --format dmg --version 1.0.0 --url https://example.test/x.dmg --project-id proj_1 --channel stable --dry-run
+Dry run: would register version 1.0.0 on channel stable for project proj_1 (dmg artifact, 0 byte(s)). Nothing was sent.
+Next: drop --dry-run to actually register this release.
+
+```

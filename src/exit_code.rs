@@ -9,7 +9,7 @@ pub enum ExitCode {
 }
 
 impl From<ExitCode> for i32 {
-    fn from(code: ExitCode) -> i32 {
-        code as i32
+    fn from(code: ExitCode) -> Self {
+        code as Self
     }
 }

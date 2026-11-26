@@ -1,11 +1,9 @@
 use serde::Deserialize;
 use std::path::Path;
 
-/// `barrel.jsonc`'s own shape: stable per-repo settings a developer commits.
-/// Every field here is also flag-overridable at the CLI layer -- this
-/// struct only represents what the file itself holds. The credential is
-/// deliberately absent: it's env-var-only, never read from or written to
-/// this file.
+/// `barrel.jsonc`'s own shape: settings a developer commits, each also
+/// flag-overridable at the CLI layer. The credential is deliberately
+/// absent -- it's env-var-only, never read from or written to this file.
 #[derive(Debug, Clone, Default, Deserialize)]
 pub struct BarrelConfig {
     #[serde(rename = "projectId")]
@@ -32,8 +30,7 @@ pub enum ConfigError {
 
 /// Loads `barrel.jsonc` if it exists; an absent file is not an error -- a
 /// developer invoking every flag explicitly needs no committed file at all.
-/// No "current project" state is persisted anywhere by this loader or by
-/// any other part of the CLI.
+/// No "current project" state is persisted anywhere by this CLI.
 pub fn load(path: &Path) -> Result<BarrelConfig, ConfigError> {
     if !path.exists() {
         return Ok(BarrelConfig::default());

@@ -1,0 +1,11 @@
+```
+$ barrel
+barrel registers a release with Barrel for an artifact you've already built, signed, and hosted.
+
+Quickstart:
+  barrel release create --artifact <path> --platform <platform> --arch <arch>
+    --format <format> --version <version> --url <url> --project-id <id> --channel <channel>
+
+Run `barrel --help` for the full command reference.
+
+```

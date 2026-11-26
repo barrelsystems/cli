@@ -1,0 +1,11 @@
+```
+$ barrel publish
+? failed
+error: unrecognized subcommand 'publish'
+
+Usage: barrel [OPTIONS] [COMMAND]
+
+For more information, try '--help'.
+Hint: You probably want `barrel release create`.
+
+```
